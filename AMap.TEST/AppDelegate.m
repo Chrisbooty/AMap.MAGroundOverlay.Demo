@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [AMapServices sharedServices].apiKey = @"e2e621b620cdbbb82ed6a6a08ba8e2ef";
+    [AMapServices sharedServices].enableHTTPS = YES;
     return YES;
 }
 

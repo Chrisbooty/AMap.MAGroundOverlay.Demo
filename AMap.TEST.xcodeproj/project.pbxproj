@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0550FD8EE52B2D873F558048 /* libPods-AMap.TEST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3F4570AC2066861DCF11A1 /* libPods-AMap.TEST.a */; };
 		83F56AE21EA5A0FA00016370 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F56AE11EA5A0FA00016370 /* main.m */; };
 		83F56AE51EA5A0FA00016370 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F56AE41EA5A0FA00016370 /* AppDelegate.m */; };
 		83F56AE81EA5A0FA00016370 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F56AE71EA5A0FA00016370 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D3F4570AC2066861DCF11A1 /* libPods-AMap.TEST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMap.TEST.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6708C57F58D19BD979F35D11 /* Pods-AMap.TEST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMap.TEST.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMap.TEST/Pods-AMap.TEST.release.xcconfig"; sourceTree = "<group>"; };
 		83F56ADD1EA5A0FA00016370 /* AMap.TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMap.TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F56AE11EA5A0FA00016370 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83F56AE31EA5A0FA00016370 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		83F56AEC1EA5A0FA00016370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F56AEF1EA5A0FA00016370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F56AF11EA5A0FA00016370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935BBD7C888C0CCE6AFCACCE /* Pods-AMap.TEST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMap.TEST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMap.TEST/Pods-AMap.TEST.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0550FD8EE52B2D873F558048 /* libPods-AMap.TEST.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62456F385C58BEB8921C208F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D3F4570AC2066861DCF11A1 /* libPods-AMap.TEST.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83F56AD41EA5A0FA00016370 = {
 			isa = PBXGroup;
 			children = (
 				83F56ADF1EA5A0FA00016370 /* AMap.TEST */,
 				83F56ADE1EA5A0FA00016370 /* Products */,
+				BAD28D9D8F5E06254972567E /* Pods */,
+				62456F385C58BEB8921C208F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BAD28D9D8F5E06254972567E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				935BBD7C888C0CCE6AFCACCE /* Pods-AMap.TEST.debug.xcconfig */,
+				6708C57F58D19BD979F35D11 /* Pods-AMap.TEST.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83F56AF41EA5A0FA00016370 /* Build configuration list for PBXNativeTarget "AMap.TEST" */;
 			buildPhases = (
+				539ADFD7ADF58300CBA7E063 /* [CP] Check Pods Manifest.lock */,
 				83F56AD91EA5A0FA00016370 /* Sources */,
 				83F56ADA1EA5A0FA00016370 /* Frameworks */,
 				83F56ADB1EA5A0FA00016370 /* Resources */,
+				54075D3993A694B39FD438EC /* [CP] Embed Pods Frameworks */,
+				EA2C977D618479603C7A625A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		539ADFD7ADF58300CBA7E063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54075D3993A694B39FD438EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMap.TEST/Pods-AMap.TEST-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2C977D618479603C7A625A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMap.TEST/Pods-AMap.TEST-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83F56AD91EA5A0FA00016370 /* Sources */ = {
@@ -270,22 +345,26 @@
 		};
 		83F56AF51EA5A0FA00016370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935BBD7C888C0CCE6AFCACCE /* Pods-AMap.TEST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMap.TEST/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cijian.AMap-TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cijian.yunxiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		83F56AF61EA5A0FA00016370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6708C57F58D19BD979F35D11 /* Pods-AMap.TEST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMap.TEST/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cijian.AMap-TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cijian.yunxiao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -309,6 +388,7 @@
 				83F56AF61EA5A0FA00016370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
