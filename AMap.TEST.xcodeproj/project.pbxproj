@@ -137,6 +137,7 @@
 				TargetAttributes = {
 					83F56ADC1EA5A0FA00016370 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = EZ9549DPUB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -348,6 +349,7 @@
 			baseConfigurationReference = 935BBD7C888C0CCE6AFCACCE /* Pods-AMap.TEST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZ9549DPUB;
 				INFOPLIST_FILE = AMap.TEST/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -361,6 +363,7 @@
 			baseConfigurationReference = 6708C57F58D19BD979F35D11 /* Pods-AMap.TEST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZ9549DPUB;
 				INFOPLIST_FILE = AMap.TEST/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
